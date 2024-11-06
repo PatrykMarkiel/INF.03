@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    background-color: rgb(146, 184, 112);
+}
+
+.bronzowe{
+    background-color: rgb(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+.main{
+    background-color: rgb(146, 184, 112);
+    width: 50%;
+    height: 450px;
+}
+#naglowek{
+    letter-spacing: 20px ;
+    font-size: 250%;
+}
+
+.gorny-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 170px; 
+}
+.gorny{
+    text-align: center;
+    width: 50%;
+
+}
+.gorny-prawy {
+    background-image: url('cukierki.jpg');
+    background-size: cover; 
+    padding-right: 30px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none; 
+    display: inline-block; 
+}
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex:1;
+}
+table, tr, td{
+    border: 2px;
+    border-color: green;
+    border-style: dashed;
+    margin: 30px;
+    padding: 20px;
+}

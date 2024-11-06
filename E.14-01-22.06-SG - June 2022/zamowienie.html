@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka cukierków</title>
+    <link rel="stylesheet" href="styl10.css">
+</head>
+<body>
+    <section class="gorny-container">
+        <div class="gorny">
+            <a href="zamowienie.html" class="gorny-prawy">Zamów cukierki</a>
+        </div>
+        <div class="gorny">
+            <a href="index.html">
+                <img src="logotyp.png" alt="Nasze logo">
+            </a>
+        </div>
+    </section>
+    
+    
+    <section class="bronzowe">
+        <h1 id="naglowek">Stefa zamówień</h1>
+    </section>
+    <section  id="main-container">
+
+        <div class="main">
+            <p>Numer kształtu</p><br>
+            <input type="number" id="ksztalt">
+            <p>skomponuj swój kolor, podaj RGB:</p>
+            <span>R: <input type="number" id="red" min="0" max="255"></span>
+            <span>G: <input type="number" id="green" min="0" max="255"></span>
+            <span>B: <input type="number" id="blue" min="0" max="255"></span>
+            <br>
+            <button  id="zamowienie">Zamówienie</button>
+            <p id="twojeZamowienie">Twoje zamówienie</p>
+            <button id="kolorButton">Kolor</button>
+        </div>
+        <div class="main">
+            <h2>Nasza oferta</h2>
+            <table>
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">
+                        Możesz zamówić dowolny kolor <br>
+                        cukierka
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>cytryna</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer class="bronzowe">
+        Autor strony: <b>PESEL</b>
+    </footer>
+    <script>
+        document.getElementById('zamowienie').addEventListener('click', function() {
+            const ksztalt = document.getElementById('ksztalt').value;
+            const twojeZamowienieElement = document.getElementById('twojeZamowienie');
+            let twojeZamowienie = 'Twoje zamówienie to cukierek ';
+
+            switch (parseInt(ksztalt)) {
+                case 1:
+                    twojeZamowienie = 'cytryna';
+                    break;
+                case 2:
+                    twojeZamowienie = 'liść';
+                    break;
+                case 3:
+                    twojeZamowienie = 'banan';
+                    break;
+                default:
+                    twojeZamowienie = 'inny';
+            }
+
+            twojeZamowienieElement.textContent = twojeZamowienie;
+
+            const red = document.getElementById('red').value;
+            const green = document.getElementById('green').value;
+            const blue = document.getElementById('blue').value;
+
+            const kolorButton = document.getElementById('kolorButton');
+            kolorButton.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+        });
+    </script>
+</body>
+</html>
