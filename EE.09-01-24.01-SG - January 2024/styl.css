@@ -1,0 +1,53 @@
+#baner{
+    color: white;
+    text-align: center;
+    height: 370px;
+}
+#wszystkie-mecze{
+    display: flex;
+    flex-wrap: wrap; 
+}
+#mecze{
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+#mecze:hover{
+    border-color: white;
+}
+#main{
+    background-color: whitesmoke;
+    height: 50px;
+}
+#main-content{
+    display: flex;
+    flex-wrap: wrap; 
+}
+#lewy{
+    background-color: whitesmoke;
+    width: 70%;
+    height: 230px;
+}
+#prawy{
+    background-color: whitesmoke;
+    width: 30%;
+    height: 230px;
+    text-align: right;
+}
+body{
+    font-family: Tahoma;
+    background-color: crimson;
+}
+h2{
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+}
+ul li p{
+    display: inline;
+}
