@@ -10,7 +10,7 @@ INF.03 exams are part of the vocational qualification system for IT technicians 
    3. PHP: Server-side scripting for managing dynamic content, database interactions, and user input processing.
    4. GIMP: Image editing and graphic preparation, including optimizing images and creating web-ready visuals.
 
-## What to Expect in INF.03 Exams
+# What to Expect in INF.03 Exams
 
 Each completed INF.03 exam may include tasks such as:
 
