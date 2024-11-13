@@ -1,4 +1,0 @@
-SELECT imie, miot FROM `swinki` WHERE MONTH(data_ur) =7; 
-SELECT data_ur, miot, rasy.rasa FROM `swinki` LEFT JOIN rasy on rasy.id=swinki.rasy_id WHERE rasy.id=1;
-SELECT imie, cena, opis FROM `swinki` WHERE rasy_id=1;
-SELECT rasa FROM `rasy` ;

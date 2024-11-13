@@ -1,9 +1,0 @@
-SELECT nazwa, ulica FROM `kwiaciarnie` WHERE miasto="Malbork"; 
-SELECT zamowienia.id_kwiaciarni, COUNT(zamowienia.id_zam) FROM `zamowienia` group by id_kwiaciarni; 
-SELECT nazwa, miasto, zamowienia.kwiaty FROM `kwiaciarnie`LEFT JOIN zamowienia on zamowienia.id_kwiaciarni= kwiaciarnie.id_kwiaciarni WHERE zamowienia.data='2017-01-07';
-CREATE TABLE klienci (
-    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    imie VARCHAR(15),
-    nazwisko VARCHAR(15),
-    rabat INT UNSIGNED
-);

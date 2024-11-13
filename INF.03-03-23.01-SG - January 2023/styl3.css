@@ -1,0 +1,41 @@
+body{
+    font-family: Georgia;
+}
+#baner, footer{
+    background-color:#C75B39 ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#lewy{
+    background-color: #FF8A65;
+    width: 25%;
+    height: 500px;
+    padding-top: 50px;
+}
+#prawy{
+    background-color: snow;
+    width: 75%;
+    height: 500px;
+    padding-top: 50px;
+    text-align: center;
+}
+img{
+    width: 25%;
+    margin: 10px;
+    box-shadow: 15px 15px  10px DimGray;
+}
+ul{
+    margin: 5px;
+}
+ul ::marker{
+    color: snow;
+}
+h3{
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
