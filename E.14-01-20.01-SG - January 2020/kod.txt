@@ -1,0 +1,6 @@
+SELECT id, nazwa, opis, cena FROM `podzespoly` WHERE cena<1000;
+SELECT nazwa, opis FROM `podzespoly` WHERE dostepnosc = 1 AND opis LIKE '%intel%';
+SELECT p.nazwa AS podzespoł, pr.nazwa AS producent FROM podzespoly pJOIN producenci pr ON p.producenci_id = pr.id;
+UPDATE producenci SET nazwa = 'PATRIOT' WHERE nazwa = 'Patriot';
+
+

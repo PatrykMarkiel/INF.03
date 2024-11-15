@@ -1,0 +1,46 @@
+body{
+    font-family: Georgia;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #63AC74;
+    color: orange;
+    height: 140px;
+    text-align: right;
+    font-size: 160%;
+}
+#menu, #logo{
+    width: 50%;
+}
+main{
+    background-color:#E3F6E7 ;
+    height: 500px;
+    padding: 20px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#63AC74 ;
+    height: 150px;
+}
+.class{
+    width: 25%;
+}
+a{
+    color: orange;
+    margin: 15px;
+}
+table{
+    width: 100%;
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+}
+thead{
+    background-color:#63AC74 ;
+    color: white;
+}
+thead :nth-child(4) {
+    text-align: right;
+}
