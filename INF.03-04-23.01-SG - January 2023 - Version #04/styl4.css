@@ -1,0 +1,50 @@
+body{
+    font-family: Helvetica;
+}
+#mainDivs{
+    display: flex;
+    flex-wrap: wrap;
+}
+header, footer{
+    background-color: #B3BC6D;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#dane{
+    background-color:#FFFFCE ;
+    color: olive;
+    padding: 10px 150px 10px 150px;
+}
+#lewy, #prawy{
+    background-color: #E6EE9C;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+}
+#srodek{
+    background-color: #FFFFCE ;
+    width:  50% ;
+    height: 450px;
+}
+table{
+    border: 1px;
+    border-style: solid;
+    border-color: olive;
+    margin: auto;
+    width: 70%;
+}
+h2{
+    text-align: center;
+}
+h2::first-letter{
+    font-size: 150%;
+    color: olive;
+}
+img{
+    height: 100px;
+    padding: 7px;
+}
+img:hover{
+    background-color:#B3BC6D ;
+}

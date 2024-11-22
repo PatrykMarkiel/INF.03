@@ -1,0 +1,4 @@
+SELECT id, dataWyjazdu, cel, cena FROM `wycieczki` WHERE dostepna=1;
+SELECT nazwaPliku, podpis FROM `zdjecia` ORDER BY podpis DESC;
+SELECT cel, cena, zdjecia.podpis FROM `wycieczki` LEFT JOIN zdjecia ON zdjecia.id=wycieczki.zdjecia_id  WHERE CENA>1200;
+ALTER TABLE 'wycieczki' ADD 'liczbaDni' INT NOT NULL AFTER 'dataWyjazdu';
