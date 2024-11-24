@@ -1,0 +1,4 @@
+SELECT nazwa FROM `towary` WHERE promocja=1;
+SELECT cena FROM `towary` WHERE nazwa="Markery 4 szt.";
+SELECT dostawcy.id, dostawcy.nazwa, COUNT(towary.idDostawcy) AS liczba_towarow FROM `dostawcy` LEFT JOIN towary ON towary.idDostawcy=dostawcy.id GROUP BY dostawcy.id;
+ALTER TABLE dostawcy ADD informacje VARCHAR(100);
