@@ -1,0 +1,46 @@
+body{
+    font-family: Georgia;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+}
+header,footer{
+    background-color: #4BA3C7;
+    color: white;
+    height: 80px;
+    font-size: 120%;
+}
+#lewy, #prawy{
+    background-color:#EFEFEF ;
+    width: 25%;
+}
+#srodek{
+    background-color: #90CAF9;
+    width: 50%;
+}
+table{
+    margin-left: 10px;
+    width: 90%;
+    border: 1px;
+    border-style: solid;
+    border-color: #90CAF9;
+}
+table tr td{
+    padding: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: #90CAF9;
+}
+table tr td:hover{
+    color:#90CAF9 ;
+}
+input{
+    margin: 15px 0px 15px 0px;
+}
+h4{
+   margin: 0px;
+}
