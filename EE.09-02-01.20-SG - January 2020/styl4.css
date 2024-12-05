@@ -1,0 +1,43 @@
+body{
+    font-family: Arial;
+}
+#gora{
+    display: flex;
+    text-wrap: wrap;
+    width: 100%;
+}
+#lewy, #prawy{
+    background-color: RGB(255,127,80);
+    color: white;
+    width: 50%;
+    height: 410px;
+}
+header, #dol{
+    background-color: RGB(220,220,220);
+    padding: 20px;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    display: flex;
+    text-wrap: wrap;
+}
+#fl, #fr{
+    background-color: RGB(255,127,80);
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+#fl{
+    margin-top: 0px;
+}
+table, tr, td{
+    border: 1px;
+    border-style: solid;
+    border-color: RGB(255,127,80);
+    padding: 10px;
+    text-align: center;
+}
+a{
+    color: white;
+}
