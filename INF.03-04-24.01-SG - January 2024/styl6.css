@@ -1,0 +1,45 @@
+body{
+    font-family: Verdana;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #6F79A8;
+    height: 140px;
+}
+#lewy{
+    width: 30%;
+}
+#prawy{
+    width: 70%;
+}
+
+#kalendarz{
+    background-color: #9FA8DA;
+    width: 160px;
+    height: 85px;
+    margin: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: #6F79A8;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#kalendarz:hover{
+    background-color: #6F79A8;
+    color: white;
+}
+footer{
+    background-color: #6F79A8;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}
+#info{
+    display: inline;
+    flex-wrap: nowrap;
+}
