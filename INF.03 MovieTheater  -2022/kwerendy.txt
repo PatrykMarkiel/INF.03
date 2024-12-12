@@ -1,0 +1,5 @@
+SELECT DISTINCT Data, Godzina FROM `rezerwacje`;
+SELECT Rzad, Miejsce FROM `rezerwacje` WHERE Data = '2022-08-09' AND Godzina = '18:00';
+SELECT COUNT(*) AS Liczba_Miejsc FROM `rezerwacje` WHERE Data = '2022-08-09' AND Godzina = '18:00'; 
+SELECT Rzad, Miejsce, Data,Godzina FROM `rezerwacje` JOIN kasjerzy ON Id_kasjera = kasjerzy.Id WHERE Nazwisko = 'Bednarski' AND Imie = 'Jan';
+
