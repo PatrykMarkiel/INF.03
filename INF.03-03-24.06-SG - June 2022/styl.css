@@ -1,0 +1,57 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: Georgia;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+#h1,#h2{
+    width:50%;
+}
+#menu{
+    background-color: navy;
+    padding: 20px;
+}
+label{
+    color: silver;
+    margin: 50px;
+}
+input:hover{
+    color: white;
+    text-decoration: underline;
+}
+#m1,#m2{
+    background-color: azure;
+    height: 550px;
+}
+#m1{
+    width: 70%;
+}
+#m2{
+    width: 30%;
+}
+footer{
+    background-color: navy;
+    color: white;
+}
+table{
+    border: 1px;
+    border-color: navy;
+    border-style: solid;
+    margin: auto;
+    width: 70%;
+}
+td:hover{
+    background-color: skyblue;
+}
+#obraz2{
+    width:90%;
+}
