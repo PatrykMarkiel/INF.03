@@ -1,0 +1,6 @@
+INSERT INTO `odpowiedzi`(`Pytania_id`, `konta_id`, `odpowiedz`) VALUES ('1','5','Przyda Ci się także wysoki stół,
+na którym postawisz pieska.')
+SELECT nick, YEAR(CURRENT_DATE)-rejestracja AS 'LatNaForum' FROM `konta` WHERE nick='Jacek' OR nick='Monika'  OR nick='Tomek'
+SELECT nick, postow, pytania.pytanie AS pytanie FROM `konta` LEFT JOIN pytania ON pytania.konta_id=konta.id WHERE konta.id=1"
+SELECT odpowiedzi.id_odpowiedzi, odpowiedzi.tresc, konta.nick FROM odpowiedzi JOIN konta ON odpowiedzi.id_konta = konta.id_konta WHERE odpowiedzi.id_pytania = 1;
+

@@ -1,0 +1,47 @@
+body{
+    font-family: Garamond, serif;
+}
+header{
+    background: linear-gradient(to bottom, #97b498, #c8e6c9);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#m1{
+    background-color: #c8e6c9;
+    color: #005005;
+    width: 40%;
+    height: 600px;
+}
+#m2{
+    color: #005005;
+    width: 60%;
+    height: 600px;
+    overflow: scroll;
+}
+footer{
+    background: linear-gradient(to bottom, #c8e6c9, #97b498);
+    color: white;
+    padding: 12px;
+}
+video{
+    width: 100%;
+}
+form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+button{
+    background-color: #97b498;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color:#97b498 ;
+}
