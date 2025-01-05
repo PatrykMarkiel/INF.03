@@ -1,0 +1,69 @@
+body{
+    font-family: Helvetica;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+header,footer{
+    background-color: sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#m1,#m3{
+    background-color: navajowhite;
+    width: 15%;
+    height: 700px;
+}
+#m2{
+    width: 70%;
+    height: 700px;
+    overflow: scroll;
+}
+img{
+    width: 100%;
+}
+h3,p,a{
+    opacity: 0;
+    position: relative;
+}
+h3{
+    top: 5%;
+}
+p{
+    top: 30%;
+}
+a{
+    top: 70%;
+    left: 70%;
+    background-color: sienna;
+    padding: 15px;
+}
+#m2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.obraz{
+    width: 46%;
+    margin: 2%;
+    float: left;
+    position: relative;
+}
+.obraz img:hover {
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+.obraz:hover h3 {
+    opacity: 1;
+}
+
+.obraz:hover p {
+    opacity: 0;
+}
+
+.obraz:hover a {
+    opacity: 0;
+}
+
