@@ -1,0 +1,5 @@
+INSERT INTO `logowanie`(`nick`, `haslo`) VALUES ('Jeremi','Jer123');
+SELECT FLOOR(AVG(rokUr)) AS 'Średni rok urodzenia' FROM `uczestnicy` WHERE 1;
+SELECT imie, nazwisko FROM `uczestnicy` LEFT JOIN logowanie ON logowanie.id=uczestnicy.logowanie_id WHERE imie like 'J%';
+CREATE USER 'uczestnik'@'%' IDENTIFIED VIA mysql_native_password USING '***';GRANT USAGE ON *.* TO 'uczestnik'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0; 
+GRANT SELECT, UPDATE ON chat.uczestnicy TO 'uczestnik'@'localhost';
