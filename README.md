@@ -1,4 +1,4 @@
-# INF.03 Exam Tests
+# INF.03 Exams
 
 This repository contains completed past INF.03, EE.09 and E.14 exam tests to help IT technician students prepare by reviewing real exam scenarios that have already been used in official exams.
 What are INF.03 Exam Tests?
