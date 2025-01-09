@@ -1,3 +1,5 @@
 SELECT imie, pensja FROM `pracownicy` WHERE staz<5;
 SELECT ROUND(AVG(pensja),0), stanowiska.nazwa FROM `pracownicy` LEFT JOIN stanowiska ON stanowiska.id=pracownicy.stanowiska_id GROUP BY stanowiska_id;
 SELECT imie, nazwisko, pensja FROM pracownicy WHERE pracownicy.id = ( SELECT pracownicy.id FROM pracownicy ORDER BY pensja DESC LIMIT 1);
+UPDATE `pracownicy` SET `staz`=staz+1;
+
