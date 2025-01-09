@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+    <main>
+        <div class="blok">
+            <img src="pliki/pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="obraz1">
+            <form  id="opcje">
+                <label>
+                    <input type="radio" name="effect" value="blur">
+                    Blur
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="effect" value="sepia">
+                    Sepia
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="effect" value="negative">
+                    Negatyw
+                </label>
+                <br>
+                <button type="submit" id="zastosujM1">Zastosuj</button>
+            </form>
+        </div>
+        <div class="blok">
+            <img src="pliki/pomarancza.jpg" alt="drzewo pomarańczy" id="obraz2">
+            <br>
+            <button type="button" name="kolor" id="kolor">Klorowy</button>
+            <br>
+            <button type="button" name="czarny" id="czarny">Czarno-biały</button>
+        </div>
+        <div class="blok">
+            <img src="pliki/owoce.jpg" alt="Kosz pełen owoców" id="obraz3">
+            <br>
+            <input type="range" name="suwakM3" min="0" max="100" value="100">
+            <br>
+            <button type="button" id="zastosujM3">Zastosuj</button>
+        </div>
+        <div class="blok">
+            <img src="pliki/zolw.jpg" alt="Żółw w wodzie" id="obraz4">
+            <br>
+            <input type="range" name="suwakM4" min="0" max="250">
+            <br>
+            <button type="submit" id="zastosujM4">Zastosuj</button>
+        </div>
+    </main>
+    <footer>
+        <a href="http://www.css.com/" target="_blank">obacz inne efekty
+            obrazu
+        </a>
+        <p>Stronę wykonał: numer zdającego </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

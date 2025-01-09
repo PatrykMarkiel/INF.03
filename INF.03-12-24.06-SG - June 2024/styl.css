@@ -1,0 +1,44 @@
+body{
+    font-family: Century, serif;
+    text-align: center;
+}
+footer, header{
+    background-color: indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blok{
+    width: 50%;
+    height: 470px;
+}
+img{
+    padding: 3px;
+    margin: 10px;
+    border: 2px;
+    border-style: dashed;
+    border-color: slateblue;
+}
+a{
+    color: white;
+}
+button{
+    background-color: slateblue;
+    color: white;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: indigo;
+}
+input[type="range"]{
+    width: 80%;
+}
