@@ -1,0 +1,68 @@
+body {
+    font-family: 'Garamond', serif;
+    text-align: center;
+}
+
+#left {
+    width: 72%;
+}
+main {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#l1 {
+    background-color: #795548;
+    font-size: 170%;
+}
+#l1 h1{
+    margin: 0;
+    padding: 40px;
+}
+#l1 a{
+    color:white;
+}
+#l2 
+{
+    height: 400px;
+}
+#right {
+    background-color: #bcaaa4;
+    color: #795548;
+    width: 28%;
+    padding: 10px;
+}
+
+footer {
+    background-color: #795548;
+    color: white;
+    padding: 20px;
+}
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #795548;
+}
+table td {
+    border: 1px solid #795548;
+}
+
+table th {
+    background-color: #d7ccc8;
+}
+
+table td:hover {
+    background-color: sienna;
+    color: white;
+}
+h4 {
+    font-size: 200%;
+}
+img {
+    padding: 20px;
+    border-radius: 40px;
+}
+
+input[type='radio'] {
+    margin: 7px;
+}
