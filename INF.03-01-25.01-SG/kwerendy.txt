@@ -1,0 +1,4 @@
+kw1: SELECT kolor, material FROM `produkt` WHERE wysokosc_buta>10;
+kw2: SELECT nazwa, cena, kategorie.nazwa_kat FROM `buty` LEFT JOIN kategorie ON kategorie.id_kat=buty.id_kat;
+kw3: CREATE USER 'Marek'@'localhost' IDENTIFIED BY 'M@reK'; 
+kw4: GRANT SELECT, UPDATE ON produkt TO 'Marek'@'localhost'; 
