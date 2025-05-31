@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaż paneli podłogowych</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="montaz_paneli.png" alt="firma usługowa">
+    </header>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="koszty.html">Kalkulator kosztów</a>
+    </nav>
+    <main>
+        <h1>Kalkulator kosztów montażu</h1>
+        <label for="szerokosc">Szerokość pomieszczenia [m]:</label>
+        <input type="number" name="szerokosc" id="szerokosc">
+        
+        <label for="dlugosc">Długość pomieszczenia [m]:</label>
+        <input type="number" name="dlugosc" id="dlugosc">
+
+        <p>Typ panelu</p>
+        <input type="radio" name="typ_panelu" id="laminowane" value="50">
+        <label for="laminowane">Panele laminowane</label><br>
+
+        <input type="radio" name="typ_panelu" id="winylowe" value="70">
+        <label for="winylowe">Panele winylowe</label><br>
+
+        <input type="radio" name="typ_panelu" id="deska" value="100">
+        <label for="deska">Deska podłogowa</label><br>
+
+        <button onclick="Oblicz()">Oblicz</button>
+        <p id="wynik"></p>
+    </main>
+    <footer>Autor strony: Numer zdającego</footer>
+    <script>
+        function Oblicz() {
+                let szerokosc = parseFloat(document.getElementById("szerokosc").value);
+                let dlugosc = parseFloat(document.getElementById("dlugosc").value);
+                const typPanelu = document.querySelector('input[name="typ_panelu"]:checked');
+
+                if (!szerokosc || !dlugosc || !typPanelu || szerokosc <= 0 || dlugosc <= 0) {
+                    document.getElementById("wynik").innerText = "Wprowadź poprawne dane.";
+                    return;
+                }
+
+                const cenaZaMetr = parseFloat(typPanelu.value);
+                const powierzchnia = szerokosc * dlugosc;
+                const koszt = powierzchnia * cenaZaMetr;
+
+                document.getElementById("wynik").innerText = `Koszt montażu wynosi: ${koszt.toFixed(2)} zł`;
+            }
+    </script>
+</body>
+</html>
