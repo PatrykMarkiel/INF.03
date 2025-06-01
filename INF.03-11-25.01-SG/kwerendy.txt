@@ -1,0 +1,4 @@
+kw1: SELECT nazwa, opis, cena FROM `nagrody` ORDER BY RAND() LIMIT 5;
+kw2:SELECT * FROM `nagrody` WHERE nagrody.cena BETWEEN 100 AND 1000 AND nagrody.ilosc_sztuk=2;
+kw3: DELETE FROM `nagrody` WHERE nagrody.cena is null OR nagrody.cena=0;
+kw4: SELECT nazwa, cena, data_dodania FROM `nagrody` WHERE YEAR(data_dodania) = 2021 AND MONTH(data_dodania)=8 ORDER BY data_dodania;
