@@ -1,0 +1,3 @@
+SELECT imieniny.data FROM `imieniny` WHERE imiona LIKE '%Karola%';
+SELECT imiona FROM `imieniny` WHERE imieniny.data='05-04';
+SELECT COUNT(imieniny.data) FROM `imieniny` WHERE imiona LIKE "%mir%";

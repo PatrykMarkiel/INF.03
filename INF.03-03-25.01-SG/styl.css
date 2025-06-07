@@ -1,0 +1,54 @@
+body{
+    font-family: 'Bookman', 'serif';
+}
+header, footer{
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#napis{
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: right;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#lewy, #prawy{
+    background-color: lavender;
+    height: 500px;
+}
+#lewy{
+    width: 25%;
+}
+#prawy{
+    width: 35%;
+}
+#srodkowy{
+    background-color: ghostwhite;
+    text-align: center;
+    height: 500px;
+    width: 40%;
+}
+img{
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+p{
+    color: white;
+    font-size: 150%;
+    font-style: italic;
+}
+table, form{
+    margin: 30px;
+}
+table, td{
+    border: 1px solid indigo;
+    border-collapse: collapse;
+}
+th, td{
+    margin: 3px;
+}
