@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka cukierków</title>
+    <link rel="stylesheet" href="styl10.css">
+</head>
+<body>
+    <header>
+        <section id="gora1">
+            <a href="zamowienie.html">Zamów cukierki</a>
+        </section>
+        <section id="gora2">
+            <a href="index.html"><img src="logotyp.png" alt="Nasze logo"></a>
+        </section>
+    </header>
+  <section id="baner">
+    <h1>Strefa zamówień</h1>
+  </section>
+    <main>
+        <section id="srodek1">
+            <label for="ksztalt">Numer kształtu:</label>
+            <br>
+            <input type="number" name="ksztalt" id="ksztalt">
+            <br>
+            <label for="">skomponuj swój kolor, podaj RGB:</label>
+            <br>
+            <label for="r">R:</label>
+            <input type="number" name="r" id="r">
+            <label for="g">G</label>
+            <input type="number" name="g" id="g">
+            <label for="b">B</label>
+            <input type="number" name="b" id="b">
+            <br>
+            <button id="zamowienie" onclick="zamowienie()">zamówienie</button>
+            <p id="wynik">Twoje zamówienie</p>
+            <button id="kolor" onclick="kolor()">Kolor</button>
+        </section>
+        <section id="srodek2">
+            <h2>
+                Nasza oferta
+            </h2>
+            <table>
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">Możesz zamówić<br>dowolny kolor cukierka</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>cytryna</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>Autor strony: PESEL</footer>
+    <script>
+        function zamowienie(){
+                    let ksztalt = document.getElementById('ksztalt').value;
+        switch(ksztalt) {
+            case '1':
+                ksztalt = 'cytryna';
+                break;
+            case '2':
+                ksztalt = 'liść';
+                break;
+            case '3':
+                ksztalt = 'banan';
+                break;
+            default:
+                ksztalt = 'inny';
+        }
+        document.getElementById('wynik').innerHTML = "Twoje zamówienie to cukierek "+ ksztalt;
+        }
+        function kolor()
+        {
+            let r = document.getElementById('r').value;
+            let g = document.getElementById('g').value;
+            let b = document.getElementById('b').value;
+            let kolor = "rgb(" + r + "," + g + "," + b + ")";
+            document.getElementById('kolor').style.backgroundColor = kolor;
+        }
+    </script>
+</body>
+</html>
